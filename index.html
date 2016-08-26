@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>jQuery, AJAX and open API:s</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <meta name="author" content="Daniel Karjanlahti">
+    <meta name="keywords" content="AJAX, jQuery, Open API">
+    <meta name="description" content="Working with jQuery, AJAX and open API:s" />
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.1.0.slim.min.js" integrity="sha256-cRpWjoSOw5KcyIOaZNo4i6fZ9tKPhYYb6i5T9RSVJG8=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="menu-wrapper">
+        <div class="menu hide-on-small">
+            <nav>
+                <ul class="menu">
+                    <li class="logo">
+                        <a href="#"><img src="assets/img/logo.ico" alt="Logotype" /></a>
+                    </li>
+                    <li class="menu-item active"><a href="index.php?page=hem">Hem</a></li>
+                    <li class="menu-item with-child"><a href="index.php?page=galleri">Galleri</a>
+                        <ul>
+                            <li class="sublink"><a href="index.php?page=foto">Foto</a></li>
+                            <li class="sublink"><a href="index.php?page=vektor">Vektor</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item with-child"><a href="index.php?page=portfolio">Portfolio</a>
+                        <ul>
+                            <li class="sublink"><a href="index.php?page=frontend">Frontend</a></li>
+                            <li class="sublink"><a href="index.php?page=design">Design</a></li>
+                            <li class="sublink"><a href="index.php?page=backend">Backend</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+        <!-- Mobile menu, hide on desktop -->
+        <label for="toggler" class="menu-icon">☰</label>
+        <input type="checkbox" id="toggler">
+        <div class="mobile-menu">
+            <nav>
+                <ul class="menu">
+                    <li class="menu-item active"><a href="index.php?page=hem">Hem</a></li>
+                    <li class="menu-item"><a href="index.php?page=galleri">Galleri</a></li>
+                    <li class="menu-item"><a href="index.php?page=portfolio">Portfolio</a></li>
+                    <li class="menu-item"><a href="index.php?page=login">Login</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div><!--  /.menu-wrapper -->
+    
+    <section class="main-content">
+        <!-- load in content async -->
+    </section>
+    
+    <footer>
+        <p>Created by Daniel K &copy; 2016 GNU</p>
+    </footer>
+    
+    <script type="text/javascript" src="js/script.js"></script>
+</body>
+
+</html>
