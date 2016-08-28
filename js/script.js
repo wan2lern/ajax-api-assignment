@@ -1,3 +1,4 @@
+// document.ready
 $(function () {
     // Sticky menu script
     $(document).ready(function () {
