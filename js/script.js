@@ -1,8 +1,7 @@
 // document.ready
 $(function () {
     // Sticky menu script
-    $(document).ready(function () {
-        // kolla om användaren har scrollat lägre än menyn
+    // kolla om användaren har scrollat lägre än menyn
         // nav position i var
         var navOffset = $('nav.header-menu').offset().top;
 
@@ -20,8 +19,7 @@ $(function () {
             } else {
                 $('.header-menu').removeClass('fixed');
             }
-        })
-    });
+    })
 
 
     // Sätt active klass på klickad menulänk
