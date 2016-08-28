@@ -1,0 +1,6 @@
+{
+    'url': [
+        'Stockholm': 'http://api.openweathermap.org/data/2.5/weather?q=Stockholm&APPID=febb6f8b574869296fae74debbb6d211&units=metric',
+        'Södertälje': 'http://api.openweathermap.org/data/2.5/weather?q=Sodertalje&APPID=febb6f8b574869296fae74debbb6d211&units=metric'
+    ]
+}
