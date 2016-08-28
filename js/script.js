@@ -2,23 +2,23 @@
 $(function () {
     // Sticky menu script
     // kolla om användaren har scrollat lägre än menyn
-        // nav position i var
-        var navOffset = $('nav.header-menu').offset().top;
+    // nav position i var
+    var navOffset = $('nav.header-menu').offset().top;
 
-        // sätt en wrapper runt nav så att innehållet inte hoppar
-        $('.outer-nav-wrapper').height($('.header-menu').outerHeight());
-        $('.outer-nav-wrapper').width('100%');
+    // sätt en wrapper runt nav så att innehållet inte hoppar
+    $('.outer-nav-wrapper').height($('.header-menu').outerHeight());
+    $('.outer-nav-wrapper').width('100%');
 
-        $(window).scroll(function () {
-            // scroll position
-            var scrollPos = $(window).scrollTop();
+    $(window).scroll(function () {
+        // scroll position
+        var scrollPos = $(window).scrollTop();
 
-            if (scrollPos >= navOffset + 2) {
-                $('.header-menu').addClass('fixed');
-                $('.header-menu').css('margin-top', 0);
-            } else {
-                $('.header-menu').removeClass('fixed');
-            }
+        if (scrollPos >= navOffset + 2) {
+            $('.header-menu').addClass('fixed');
+            $('.header-menu').css('margin-top', 0);
+        } else {
+            $('.header-menu').removeClass('fixed');
+        }
     })
 
 
