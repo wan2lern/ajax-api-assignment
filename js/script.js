@@ -23,13 +23,11 @@ $(function () {
     });
 
 
-    // 
+    // Sätt active klass på klickad menulänk
+    // ladda innehållet från href
     $(".menu-item a").click(function (e) {
         e.preventDefault();
         $(this).parent().addClass("active").siblings().removeClass('active');
         $('#main').load(this.href + ' #main *');
     });
-
-    var data = JSON.parse('data.json');
-    console.log(data);
 });
